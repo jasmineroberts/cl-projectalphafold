@@ -35,8 +35,9 @@
       }
       .sidebar-text {
         width: 25% !important;
-        background: #e9d6ff !important;
+		position: absolute;
         float: left;
+		background: none;
         display: list-item;
         height: 100vh;
         padding: 31px 40px;
@@ -152,7 +153,7 @@
 
   <body>
     <div style="width: 100% !important;">
-    <div id="gameContainer" style="width: 75% !important;float: right;"></div>
+    <div id="gameContainer" style="float: right;"></div>
     <div class="sidebar-text">
       
       <h3>Project AlphaFold</h3>
@@ -171,7 +172,7 @@
   <script src="Build/UnityLoader.js"></script>
 
   <script>
-  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/009.json", {onProgress: UnityProgress});
+  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/001.json", {onProgress: UnityProgress});
   function UnityProgress(gameInstance, progress) {
     if (!gameInstance.Module) {
       return;
