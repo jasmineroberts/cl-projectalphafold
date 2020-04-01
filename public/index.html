@@ -1,24 +1,134 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Project AlphaFold test</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/cl-projectalphafold-4.json", {onProgress: UnityProgress});
-    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project AlphaFold</title>
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+      @font-face {
+        font-family: 'DMSans-Regular';
+        src: url(fonts/DMSans-Regular.ttf) ;
+      }
+      @font-face {
+        font-family: 'DMSerifDisplay-Regular';
+        src: url(fonts/DMSerifDisplay-Regular.ttf) ;
+      }
+      @font-face {
+        font-family: 'DMSerifText-Regular';
+        src: url(fonts/DMSerifText-Regular.ttf) ;
+      }
+      @font-face {
+        font-family: 'DMSans-Medium';
+        src: url(fonts/DMSans-Medium.ttf) ;
+      }
+      @font-face {
+        font-family: 'DMSans-Bold';
+        src: url(fonts/DMSans-Bold.ttf) ;
+      }
+	  
+	  a{
+	  text-decoration: none;
+	  color: #1e65db;
+	  }
+
+	  a:visited{
+	  text-decoration: none;
+	  color:  #1e65db;
+  		}
+  
+      .body-fancy {
+        background-color: #0055d6;
+        padding: 75px 100px;
+      }
+      .heading-fancy > h1 {
+        color: #fdfdfd;
+        font-size: 56px;
+        font-family: 'DMSerifDisplay-Regular';
+        font-weight: lighter;
+        line-height: 1.2em;
+        letter-spacing: 1.0px;
+      }
+      .description-fancy > p {
+        color: #daf3fc;
+		letter-spacing: 0.5px;
+        font-family: 'DMSans-Regular';
+        font-size: 18.5px;
+      }
+      .links-fancy > a {
+        color: #daf3fc;
+        font-size: 10.25px;
+        letter-spacing: 1.39px;
+        font-family: 'DMSans-Bold';
+		opacity: 0.87;
+      }
+      .button-fancy {
+        margin-top: 45px;
+		padding: 19.5px 51px;
+        border-radius: 7px;
+        font-size: 14.5px;
+        color: #1e65db;
+        background-color: #e8d6fe;
+        letter-spacing: 1.3px;
+		font-family: 'DMSans-Bold';
+		font-weight: bolder;
+      }
+      .button-fancy:hover {
+        cursor: pointer;
+      }
+      .footer-fancy {
+        margin-top: 30px;
+		color: black;
+        position: fixed;
+        bottom: 3%;
+        font-family: 'DMSans-Medium';
+        font-size: 13px;
+		opacity: 0.38;
+		letter-spacing: -0.4px;
+      }
+      @media only screen and (max-width: 768px){
+        .heading-fancy > h1 {
+        font-size: 26px 
+        }
+      }
+      @media only screen and (min-width: 1024px){
+      .heading-fancy {
+        width: 80%;
+        }
+      }
+      @media only screen and (min-width: 1024px){
+      .description-fancy {
+        width: 45%;
+        }
+      }
+    </style>
   </head>
-  <body>
-	  <body style="background-color:#f0f5f5;">
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 940px; height: 530px"></div>
-      <div class="footer">
-       
+  <body class="body-fancy">
+   <div class="section-fancy"> 
+    <div class="modules-fancy">
+  		<div class="heading-fancy">
+	   		<h1>
+				  AlphaFold: A COVID-19 3D <br> Predicton Model Visualization Tool  
+		  	</h1> 
+      </div> 
+      <div class="description-fancy">
+        <p>
+          A tool for researchers to visually explore the <br> structure of DeepMind's protein prediction models. 
+        </p>
       </div>
-    </div>
+      <div class="links-fancy">
+        <a href="#"> ABOUT THIS PROJECT </a> <br>
+        <a href="#"> ABOUT DEEPMIND'S RESEARCH </a> 
+      </div> 
+      <br> <br> <br>
+			 <button type="button" class="button-fancy"><a href="app/index.html" style="text-decoration: none;"> VIEW THE TOOL </a> </button>
+	   </div>
+     <div class="footer-fancy">
+       <p>
+         Privileged & Confidential - Do not share 
+       </p>
+     </div>
+   </div>  
   </body>
 </html>
